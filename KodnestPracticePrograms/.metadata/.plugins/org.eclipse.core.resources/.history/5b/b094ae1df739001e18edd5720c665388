@@ -1,0 +1,19 @@
+package MethodsWithOperators;
+
+public class BitwiseBitCounter {
+	public static int binaryconverter(int num) {
+		return Integer.parseInt(Integer.toBinaryString(num));
+	}
+	public static int countnumberofSetOne() {
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num=22;
+		
+		
+		System.out.println(binarydigits);
+	}
+
+}

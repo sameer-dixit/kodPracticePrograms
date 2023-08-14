@@ -1,0 +1,41 @@
+package MethodsWithOperators;
+
+import java.util.Scanner;
+
+public class MethodOverloadingCalculator {
+	public static void calculate(double num1,double num2,char operator) {
+		
+	}
+	public static double calculate(double num1,double num2,char operator) {
+		switch(operator) {
+		case'-':
+			return num1-num2;
+		case'*':
+			return num1*num2;
+		case'/':
+			return num1/num2;
+		default:
+			System.out.println("enter the valid operator");
+		}
+		return 0.0;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the first number:");
+		double num1=sc.nextDouble();
+		System.out.println("Enter the second number:");
+		double num2=sc.nextDouble();
+		System.out.println("Enter the operator (+, -, *, /):");
+		char operator=sc.next().charAt(0);
+		  double res=0;
+		  switch(operator) {
+		  case '+':
+			  calculate(num1,num2);
+		  }
+
+
+	}
+
+}

@@ -1,0 +1,16 @@
+package MethodsWithOperators;
+
+public class BitwiseBitCounter {
+	public static int binaryconverter(int num) {
+		Integer
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num=22;
+		String binaryconverted=Integer.toBinaryString(num);
+		int binarydigits=Integer.parseInt(binaryconverted);
+		System.out.println(binarydigits);
+	}
+
+}

@@ -1,0 +1,15 @@
+package MethodsWithOperators;
+
+public class example {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str="123";
+		char ch=str.charAt(1);
+		System.out.println(ch);
+//		int num=Integer.parseInt(ch);
+		System.out.println(ch++ + ++ch);
+
+	}
+
+}

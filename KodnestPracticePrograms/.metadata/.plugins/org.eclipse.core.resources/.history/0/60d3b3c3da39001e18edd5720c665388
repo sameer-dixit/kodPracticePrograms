@@ -1,0 +1,29 @@
+package MethodsPrograms;
+
+import java.util.Scanner;
+
+public class TheCalculatorDilemma {
+	public static void Calculations(int Choice,int num1,int num2) {
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Welcome to Basic Mathematic calculations Alice");
+		System.out.println("Enter the value of two numbers  you want perform Operations:");
+		int num1=sc.nextInt();
+		int num2=sc.nextInt();
+		System.out.println("To perform Operation choose below from 1 to 4");
+		System.out.println("choose 1.For Addition");
+		System.out.println("choose 2.For Subtraction");
+		System.out.println("choose 3.For Multiplications");
+		System.out.println("choose 4.For Division");
+		int choice;
+		System.out.print("Welcome to Basic Mathematic calculations Alice");
+		
+	
+		
+	}
+
+}

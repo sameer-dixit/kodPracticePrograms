@@ -1,0 +1,67 @@
+package MethodsWithOperators;
+
+import java.util.Scanner;
+
+public class MethodOverloadingCalculator {
+	public static double calculate(int num1,int num2) {
+		return num1+num2;
+	}
+	public static double calculate(short num1,short num2,char operator) {
+		return num1-num2;
+	}
+	public static double calculate(float num1,float num2,char operator) {
+		return num1*num2;
+	}
+	public static double calculate(double num1,double num2,char operator) {
+		return num1/num2;
+	}
+//	public static double calculate(double num1,double num2,char operator) {
+//		switch(operator) {
+//		case'-':
+//			return num1-num2;
+//		case'*':
+//			return num1*num2;
+//		case'/':
+//			return num1/num2;
+//		default:
+//			System.out.println("enter the valid operator");
+//		}
+//		return 0.0;
+//	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter the operator (+, -, *, /):");
+		char operator=sc.next().charAt(0);
+		  
+		  switch(operator) {
+		  case '+':
+			  System.out.println("Enter the first number:");
+				int num1=(int) sc.nextDouble();
+				System.out.println("Enter the second number:");
+				int num2=(int) sc.nextDouble();
+			  System.out.println(calculate(num1,num2)); 
+			  break;
+		  case '-':
+			  System.out.println("Enter the first number:");
+				short num1=(int) sc.nextDouble();
+				System.out.println("Enter the second number:");
+				short num2=(int) sc.nextDouble();
+			  System.out.println(calculate(num1,num2,'-')); 
+			  break;
+		  case '*':
+			  System.out.println(calculate(num1,num2,'*')); 
+			  break;
+		  case '/':
+			  System.out.println(calculate(num1,num2,'/')); 
+			  break;	
+		  default:
+				System.out.println("enter the valid operator");	  
+		  }
+
+
+	}
+
+}

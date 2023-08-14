@@ -1,0 +1,15 @@
+package MethodsWithOperators;
+
+public class BitwiseBitCounter {
+//	public static int binaryconverter(int num) {
+//		Integer
+//	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num=22;
+		int binaryconverted=Integer.toBinaryString(num);
+		System.out.println(binaryconverted);
+	}
+
+}

@@ -1,0 +1,14 @@
+package MethodsWithOperators;
+
+public class TaxCalculator {
+	public static double calculateTotalWithTax(double purchaseAmount,double taxRate) {
+		double totalcost=purchaseAmount*taxRate;
+		return totalcost+purchaseAmount;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
